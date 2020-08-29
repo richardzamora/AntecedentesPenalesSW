@@ -1,0 +1,30 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle-webservice-clients xmlns:ns0="http://java.sun.com/xml/ns/javaee">
+   <webservice-client>
+      <service-qname namespaceURI="http://model/" localpart="ServicioAntecedentesPenalesSW"/>
+      <port-info>
+         <wsdl-port namespaceURI="http://model/" localpart="ServicioAntecedentesPenalesPort"/>
+         <runtime/>
+         <operations>
+            <operation name="darCiudadanoPorCedula"/>
+            <operation name="agregarAntecedente"/>
+            <operation name="darTipoDocumentos"/>
+            <operation name="darSentenciaTotalPorCiudadano"/>
+            <operation name="eliminarCiudadano"/>
+            <operation name="actualizarCiudadano"/>
+            <operation name="agregarCiudadano"/>
+            <operation name="darDelitoPorCodigo"/>
+            <operation name="actualizarAntecedente"/>
+            <operation name="darAntecedentes"/>
+            <operation name="eliminarAntecedente"/>
+            <operation name="darTipoDocumentoPorCodigo"/>
+            <operation name="darAntecedentePorId"/>
+            <operation name="darAntecedentesPorCiudadano"/>
+            <operation name="darAntecedentesPorDelito"/>
+            <operation name="darAntecedentesPorCiudadanoYDelito"/>
+            <operation name="darDelitos"/>
+            <operation name="darCiudadanos"/>
+         </operations>
+      </port-info>
+   </webservice-client>
+</oracle-webservice-clients>

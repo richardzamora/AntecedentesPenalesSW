@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project xmlns="http://maven.apache.org/POM/4.0.0">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>ServidorAntecedentesJDBCSW</groupId>
+  <artifactId>ServidorAntecedentesJDBCSW</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <build>
+    <resources>
+      <resource>
+        <directory>src/</directory>
+        <includes>
+          <include>**</include>
+        </includes>
+      </resource>
+    </resources>
+  </build>
+  <modules>
+    <module>ServidorAntecedentesSW</module>
+  </modules>
+  <dependencies>
+    <dependency>
+      <groupId>ServidorAntecedentesJDBCSW</groupId>
+      <artifactId>ServidorAntecedentesSW</artifactId>
+      <version>1.0-SNAPSHOT</version>
+      <type>jar</type>
+    </dependency>
+    <dependency>
+      <groupId>org.postgresql</groupId>
+      <artifactId>postgresql</artifactId>
+      <version>9.4.1212</version>
+      <type>jar</type>
+      <scope>compile</scope>
+    </dependency>
+  </dependencies>
+</project>

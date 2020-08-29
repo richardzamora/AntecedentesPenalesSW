@@ -1,0 +1,4 @@
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+  <system systemId="http://192.168.16.13:7101/ServidorAntecedentesJDBCSW-ServidorAntecedentesSW-context-root/ServicioAntecedentesPenalesPort?WSDL#%7Bhttp%3A%2F%2Fmodel%2F%7DServicioAntecedentesPenalesSW"
+          uri="../model/ServicioAntecedentesPenalesSW.wsdl"/>
+</catalog>
