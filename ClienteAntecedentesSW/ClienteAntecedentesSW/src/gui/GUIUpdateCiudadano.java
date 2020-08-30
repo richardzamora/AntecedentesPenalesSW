@@ -255,8 +255,7 @@ public class GUIUpdateCiudadano extends javax.swing.JFrame implements Cambiable{
                 jComboBox1.setSelectedIndex(ciudadano.getTipoDocumento()-1);
                 jTextField1.setText(ciudadano.getNombre());
                 jTextField3.setText(ciudadano.getApellido());
-                //TODO FALTA METODO
-                if(/*ciudadano.isHombre()*/true)
+                if(ciudadano.isGenero())
                     jRadioButtonH.setSelected(true);
                 else
                     jRadioButtonM.setSelected(true);

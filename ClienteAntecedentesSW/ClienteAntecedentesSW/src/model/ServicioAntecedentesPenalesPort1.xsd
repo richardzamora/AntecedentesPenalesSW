@@ -143,6 +143,7 @@
       <xsd:element name="apellido" type="xsd:string" minOccurs="0"/>
       <xsd:element name="cedula" type="xsd:string" minOccurs="0"/>
       <xsd:element name="fechaNacimiento" type="xsd:date" minOccurs="0"/>
+      <xsd:element name="genero" type="xsd:boolean"/>
       <xsd:element name="nombre" type="xsd:string" minOccurs="0"/>
       <xsd:element name="tipoDocumento" type="xsd:int" minOccurs="0"/>
     </xsd:sequence>

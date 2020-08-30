@@ -4,51 +4,51 @@
       <url path="ServicioAntecedentesPenalesSW.xml"/>
       <url path="ServicioAntecedentesPenalesSW.wsdl"/>
       <url path="ServicioAntecedentesPenalesPort1.xsd"/>
-      <url path="DarAntecedentePorIdResponse.java"/>
-      <url path="DarAntecedentes.java"/>
-      <url path="AgregarAntecedenteResponse.java"/>
-      <url path="DarAntecedentesPorCiudadanoYDelitoResponse.java"/>
-      <url path="package-info.java"/>
-      <url path="DarTipoDocumentoPorCodigoResponse.java"/>
-      <url path="DarTipoDocumentos.java"/>
-      <url path="DarTipoDocumentoPorCodigo.java"/>
-      <url path="DarDelitoPorCodigoResponse.java"/>
-      <url path="DarAntecedentesPorCiudadano.java"/>
-      <url path="AgregarCiudadanoResponse.java"/>
-      <url path="DarSentenciaTotalPorCiudadano.java"/>
-      <url path="Ciudadano.java"/>
-      <url path="ActualizarAntecedenteResponse.java"/>
-      <url path="DarAntecedentesPorCiudadanoResponse.java"/>
-      <url path="EliminarCiudadanoResponse.java"/>
-      <url path="DarCiudadanos.java"/>
-      <url path="TipoDocumento.java"/>
-      <url path="DarAntecedentesPorDelitoResponse.java"/>
-      <url path="ActualizarCiudadanoResponse.java"/>
-      <url path="ActualizarAntecedente.java"/>
-      <url path="DarAntecedentesPorDelito.java"/>
-      <url path="DarCiudadanoPorCedulaResponse.java"/>
-      <url path="AgregarCiudadano.java"/>
-      <url path="EliminarAntecedenteResponse.java"/>
-      <url path="ServicioAntecedentesPenalesPortClient.java"/>
-      <url path="ActualizarCiudadano.java"/>
-      <url path="ServicioAntecedentesPenales.java"/>
-      <url path="EliminarAntecedente.java"/>
-      <url path="DarAntecedentesResponse.java"/>
-      <url path="Antecedente.java"/>
-      <url path="DarDelitosResponse.java"/>
-      <url path="DarTipoDocumentosResponse.java"/>
       <url path="DarCiudadanoPorCedula.java"/>
-      <url path="DarDelitos.java"/>
-      <url path="DarAntecedentePorId.java"/>
-      <url path="ObjectFactory.java"/>
-      <url path="DarAntecedentesPorCiudadanoYDelito.java"/>
-      <url path="EliminarCiudadano.java"/>
-      <url path="AgregarAntecedente.java"/>
-      <url path="DarDelitoPorCodigo.java"/>
-      <url path="DarSentenciaTotalPorCiudadanoResponse.java"/>
+      <url path="ServicioAntecedentesPenales.java"/>
       <url path="DarCiudadanosResponse.java"/>
-      <url path="ServicioAntecedentesPenalesSW.java"/>
+      <url path="DarTipoDocumentoPorCodigo.java"/>
+      <url path="DarTipoDocumentosResponse.java"/>
+      <url path="DarAntecedentePorId.java"/>
+      <url path="DarSentenciaTotalPorCiudadanoResponse.java"/>
+      <url path="DarTipoDocumentos.java"/>
       <url path="Delito.java"/>
+      <url path="ServicioAntecedentesPenalesSW.java"/>
+      <url path="ServicioAntecedentesPenalesPortClient.java"/>
+      <url path="DarSentenciaTotalPorCiudadano.java"/>
+      <url path="DarDelitosResponse.java"/>
+      <url path="Antecedente.java"/>
+      <url path="AgregarAntecedente.java"/>
+      <url path="DarAntecedentesPorCiudadanoYDelitoResponse.java"/>
+      <url path="DarDelitoPorCodigoResponse.java"/>
+      <url path="DarCiudadanoPorCedulaResponse.java"/>
+      <url path="EliminarCiudadano.java"/>
+      <url path="EliminarAntecedente.java"/>
+      <url path="EliminarAntecedenteResponse.java"/>
+      <url path="DarAntecedentesPorCiudadano.java"/>
+      <url path="DarAntecedentesPorCiudadanoResponse.java"/>
+      <url path="DarDelitoPorCodigo.java"/>
+      <url path="EliminarCiudadanoResponse.java"/>
+      <url path="DarAntecedentesResponse.java"/>
+      <url path="TipoDocumento.java"/>
+      <url path="package-info.java"/>
+      <url path="AgregarCiudadanoResponse.java"/>
+      <url path="DarAntecedentePorIdResponse.java"/>
+      <url path="DarAntecedentesPorCiudadanoYDelito.java"/>
+      <url path="DarAntecedentes.java"/>
+      <url path="AgregarCiudadano.java"/>
+      <url path="DarAntecedentesPorDelitoResponse.java"/>
+      <url path="AgregarAntecedenteResponse.java"/>
+      <url path="Ciudadano.java"/>
+      <url path="DarCiudadanos.java"/>
+      <url path="ActualizarCiudadano.java"/>
+      <url path="DarDelitos.java"/>
+      <url path="ObjectFactory.java"/>
+      <url path="DarTipoDocumentoPorCodigoResponse.java"/>
+      <url path="DarAntecedentesPorDelito.java"/>
+      <url path="ActualizarAntecedente.java"/>
+      <url path="ActualizarAntecedenteResponse.java"/>
+      <url path="ActualizarCiudadanoResponse.java"/>
    </list>
    <hash n="DATA_MODEL">
       <value n="ATTACHMENT_ENCODING" v="MIME"/>
@@ -179,86 +179,6 @@
                <value n="NAME" v="{http://model/}ServicioAntecedentesPenalesPortBinding"/>
                <list n="OP_BINDINGS">
                   <hash>
-                     <value n="BOUND_OPERATION" v="model.Ciudadano.darCiudadanoPorCedula.java.lang.String"/>
-                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
-                     <hash n="PROPERTY_GROUPS"/>
-                  </hash>
-                  <hash>
-                     <value n="BOUND_OPERATION" v="boolean.agregarAntecedente.model.Antecedente"/>
-                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
-                     <hash n="PROPERTY_GROUPS"/>
-                  </hash>
-                  <hash>
-                     <value n="BOUND_OPERATION" v="java.util.List&lt;model.TipoDocumento>.darTipoDocumentos"/>
-                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
-                     <hash n="PROPERTY_GROUPS"/>
-                  </hash>
-                  <hash>
-                     <value n="BOUND_OPERATION" v="int.darSentenciaTotalPorCiudadano.java.lang.String"/>
-                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
-                     <hash n="PROPERTY_GROUPS"/>
-                  </hash>
-                  <hash>
-                     <value n="BOUND_OPERATION" v="boolean.eliminarCiudadano.java.lang.String"/>
-                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
-                     <hash n="PROPERTY_GROUPS"/>
-                  </hash>
-                  <hash>
-                     <value n="BOUND_OPERATION" v="boolean.actualizarCiudadano.model.Ciudadano"/>
-                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
-                     <hash n="PROPERTY_GROUPS"/>
-                  </hash>
-                  <hash>
-                     <value n="BOUND_OPERATION" v="boolean.agregarCiudadano.model.Ciudadano"/>
-                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
-                     <hash n="PROPERTY_GROUPS"/>
-                  </hash>
-                  <hash>
-                     <value n="BOUND_OPERATION" v="model.Delito.darDelitoPorCodigo.int"/>
-                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
-                     <hash n="PROPERTY_GROUPS"/>
-                  </hash>
-                  <hash>
-                     <value n="BOUND_OPERATION" v="boolean.actualizarAntecedente.model.Antecedente"/>
-                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
-                     <hash n="PROPERTY_GROUPS"/>
-                  </hash>
-                  <hash>
-                     <value n="BOUND_OPERATION" v="java.util.List&lt;model.Antecedente>.darAntecedentes"/>
-                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
-                     <hash n="PROPERTY_GROUPS"/>
-                  </hash>
-                  <hash>
-                     <value n="BOUND_OPERATION" v="boolean.eliminarAntecedente.int"/>
-                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
-                     <hash n="PROPERTY_GROUPS"/>
-                  </hash>
-                  <hash>
-                     <value n="BOUND_OPERATION" v="model.TipoDocumento.darTipoDocumentoPorCodigo.int"/>
-                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
-                     <hash n="PROPERTY_GROUPS"/>
-                  </hash>
-                  <hash>
-                     <value n="BOUND_OPERATION" v="model.Antecedente.darAntecedentePorId.int"/>
-                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
-                     <hash n="PROPERTY_GROUPS"/>
-                  </hash>
-                  <hash>
-                     <value n="BOUND_OPERATION" v="java.util.List&lt;model.Antecedente>.darAntecedentesPorCiudadano.java.lang.String"/>
-                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
-                     <hash n="PROPERTY_GROUPS"/>
-                  </hash>
-                  <hash>
-                     <value n="BOUND_OPERATION" v="java.util.List&lt;model.Antecedente>.darAntecedentesPorDelito.int"/>
-                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
-                     <hash n="PROPERTY_GROUPS"/>
-                  </hash>
-                  <hash>
-                     <value n="BOUND_OPERATION" v="java.util.List&lt;model.Antecedente>.darAntecedentesPorCiudadanoYDelito.java.lang.String.int"/>
-                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
-                     <hash n="PROPERTY_GROUPS"/>
-                  </hash>
-                  <hash>
                      <value n="BOUND_OPERATION" v="java.util.List&lt;model.Delito>.darDelitos"/>
                      <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
                      <hash n="PROPERTY_GROUPS"/>
@@ -268,12 +188,92 @@
                      <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
                      <hash n="PROPERTY_GROUPS"/>
                   </hash>
+                  <hash>
+                     <value n="BOUND_OPERATION" v="boolean.eliminarCiudadano.java.lang.String"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="BOUND_OPERATION" v="boolean.agregarCiudadano.model.Ciudadano"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="BOUND_OPERATION" v="java.util.List&lt;model.Antecedente>.darAntecedentesPorDelito.int"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="BOUND_OPERATION" v="model.Delito.darDelitoPorCodigo.int"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="BOUND_OPERATION" v="boolean.agregarAntecedente.model.Antecedente"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="BOUND_OPERATION" v="model.Antecedente.darAntecedentePorId.int"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="BOUND_OPERATION" v="boolean.actualizarAntecedente.model.Antecedente"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="BOUND_OPERATION" v="model.Ciudadano.darCiudadanoPorCedula.java.lang.String"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="BOUND_OPERATION" v="model.TipoDocumento.darTipoDocumentoPorCodigo.int"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="BOUND_OPERATION" v="int.darSentenciaTotalPorCiudadano.java.lang.String"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="BOUND_OPERATION" v="boolean.eliminarAntecedente.int"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="BOUND_OPERATION" v="java.util.List&lt;model.Antecedente>.darAntecedentesPorCiudadano.java.lang.String"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="BOUND_OPERATION" v="java.util.List&lt;model.TipoDocumento>.darTipoDocumentos"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="BOUND_OPERATION" v="boolean.actualizarCiudadano.model.Ciudadano"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="BOUND_OPERATION" v="java.util.List&lt;model.Antecedente>.darAntecedentes"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="BOUND_OPERATION" v="java.util.List&lt;model.Antecedente>.darAntecedentesPorCiudadanoYDelito.java.lang.String.int"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
                </list>
                <hash n="PROPERTY_GROUPS"/>
             </hash>
          </list>
          <list n="BINDING_FILES"/>
-         <value n="GUID" v="37d1aed7-0174-1000-8008-c0a810094ce3"/>
+         <value n="GUID" v="40f8fe0e-0174-1000-8014-c0a8100d171f"/>
          <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.proxy.WebServiceProxy$ProxyJavaWebService"/>
          <list n="PO_">
             <hash>
@@ -283,22 +283,12 @@
                <value n="PORT_BINDING_NAME" v="{http://model/}ServicioAntecedentesPenalesPortBinding"/>
                <list n="PORT_OPS">
                   <hash>
-                     <value n="EXPOSED_BD_OPERATION" v="model.Ciudadano.darCiudadanoPorCedula.java.lang.String"/>
+                     <value n="EXPOSED_BD_OPERATION" v="java.util.List&lt;model.Delito>.darDelitos"/>
                      <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
                      <hash n="PROPERTY_GROUPS"/>
                   </hash>
                   <hash>
-                     <value n="EXPOSED_BD_OPERATION" v="boolean.agregarAntecedente.model.Antecedente"/>
-                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
-                     <hash n="PROPERTY_GROUPS"/>
-                  </hash>
-                  <hash>
-                     <value n="EXPOSED_BD_OPERATION" v="java.util.List&lt;model.TipoDocumento>.darTipoDocumentos"/>
-                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
-                     <hash n="PROPERTY_GROUPS"/>
-                  </hash>
-                  <hash>
-                     <value n="EXPOSED_BD_OPERATION" v="int.darSentenciaTotalPorCiudadano.java.lang.String"/>
+                     <value n="EXPOSED_BD_OPERATION" v="java.util.List&lt;model.Ciudadano>.darCiudadanos"/>
                      <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
                      <hash n="PROPERTY_GROUPS"/>
                   </hash>
@@ -308,47 +298,7 @@
                      <hash n="PROPERTY_GROUPS"/>
                   </hash>
                   <hash>
-                     <value n="EXPOSED_BD_OPERATION" v="boolean.actualizarCiudadano.model.Ciudadano"/>
-                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
-                     <hash n="PROPERTY_GROUPS"/>
-                  </hash>
-                  <hash>
                      <value n="EXPOSED_BD_OPERATION" v="boolean.agregarCiudadano.model.Ciudadano"/>
-                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
-                     <hash n="PROPERTY_GROUPS"/>
-                  </hash>
-                  <hash>
-                     <value n="EXPOSED_BD_OPERATION" v="model.Delito.darDelitoPorCodigo.int"/>
-                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
-                     <hash n="PROPERTY_GROUPS"/>
-                  </hash>
-                  <hash>
-                     <value n="EXPOSED_BD_OPERATION" v="boolean.actualizarAntecedente.model.Antecedente"/>
-                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
-                     <hash n="PROPERTY_GROUPS"/>
-                  </hash>
-                  <hash>
-                     <value n="EXPOSED_BD_OPERATION" v="java.util.List&lt;model.Antecedente>.darAntecedentes"/>
-                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
-                     <hash n="PROPERTY_GROUPS"/>
-                  </hash>
-                  <hash>
-                     <value n="EXPOSED_BD_OPERATION" v="boolean.eliminarAntecedente.int"/>
-                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
-                     <hash n="PROPERTY_GROUPS"/>
-                  </hash>
-                  <hash>
-                     <value n="EXPOSED_BD_OPERATION" v="model.TipoDocumento.darTipoDocumentoPorCodigo.int"/>
-                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
-                     <hash n="PROPERTY_GROUPS"/>
-                  </hash>
-                  <hash>
-                     <value n="EXPOSED_BD_OPERATION" v="model.Antecedente.darAntecedentePorId.int"/>
-                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
-                     <hash n="PROPERTY_GROUPS"/>
-                  </hash>
-                  <hash>
-                     <value n="EXPOSED_BD_OPERATION" v="java.util.List&lt;model.Antecedente>.darAntecedentesPorCiudadano.java.lang.String"/>
                      <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
                      <hash n="PROPERTY_GROUPS"/>
                   </hash>
@@ -358,17 +308,67 @@
                      <hash n="PROPERTY_GROUPS"/>
                   </hash>
                   <hash>
+                     <value n="EXPOSED_BD_OPERATION" v="model.Delito.darDelitoPorCodigo.int"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="EXPOSED_BD_OPERATION" v="boolean.agregarAntecedente.model.Antecedente"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="EXPOSED_BD_OPERATION" v="model.Antecedente.darAntecedentePorId.int"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="EXPOSED_BD_OPERATION" v="boolean.actualizarAntecedente.model.Antecedente"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="EXPOSED_BD_OPERATION" v="model.Ciudadano.darCiudadanoPorCedula.java.lang.String"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="EXPOSED_BD_OPERATION" v="model.TipoDocumento.darTipoDocumentoPorCodigo.int"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="EXPOSED_BD_OPERATION" v="int.darSentenciaTotalPorCiudadano.java.lang.String"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="EXPOSED_BD_OPERATION" v="boolean.eliminarAntecedente.int"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="EXPOSED_BD_OPERATION" v="java.util.List&lt;model.Antecedente>.darAntecedentesPorCiudadano.java.lang.String"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="EXPOSED_BD_OPERATION" v="java.util.List&lt;model.TipoDocumento>.darTipoDocumentos"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="EXPOSED_BD_OPERATION" v="boolean.actualizarCiudadano.model.Ciudadano"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="EXPOSED_BD_OPERATION" v="java.util.List&lt;model.Antecedente>.darAntecedentes"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
                      <value n="EXPOSED_BD_OPERATION" v="java.util.List&lt;model.Antecedente>.darAntecedentesPorCiudadanoYDelito.java.lang.String.int"/>
-                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
-                     <hash n="PROPERTY_GROUPS"/>
-                  </hash>
-                  <hash>
-                     <value n="EXPOSED_BD_OPERATION" v="java.util.List&lt;model.Delito>.darDelitos"/>
-                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
-                     <hash n="PROPERTY_GROUPS"/>
-                  </hash>
-                  <hash>
-                     <value n="EXPOSED_BD_OPERATION" v="java.util.List&lt;model.Ciudadano>.darCiudadanos"/>
                      <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
                      <hash n="PROPERTY_GROUPS"/>
                   </hash>

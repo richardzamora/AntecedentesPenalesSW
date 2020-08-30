@@ -215,8 +215,7 @@ public class GUIBuscarCiudadano extends javax.swing.JFrame {
                 jComboBox1.setSelectedIndex(ciudadano.getTipoDocumento()-1);
                 jTextField1.setText(ciudadano.getNombre());
                 jTextField3.setText(ciudadano.getApellido());
-                //TODO ERROR AL IMPORTAR CIUDADANO FALTÓ EL ATRIBUTO GENERO
-                if(/*ciudadano.isHombre()*/true)
+                if(ciudadano.isGenero())
                     jRadioButtonH.setSelected(true);
                 else
                     jRadioButtonM.setSelected(true);

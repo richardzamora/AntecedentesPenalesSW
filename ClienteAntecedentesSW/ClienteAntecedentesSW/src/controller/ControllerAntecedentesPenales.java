@@ -53,6 +53,7 @@ public class ControllerAntecedentesPenales{
         ciudadano.setTipoDocumento(tipoDocumento);
         ciudadano.setNombre(nombre);
         ciudadano.setApellido(apellido);
+        ciudadano.setGenero(genero);
         try {
             ciudadano.setFechaNacimiento(getXmlGregorianCalendarFromDate(fechaNacimiento));
         } catch (DatatypeConfigurationException e) {
@@ -81,6 +82,7 @@ public class ControllerAntecedentesPenales{
         ciudadano.setTipoDocumento(tipoDocumento);
         ciudadano.setNombre(nombre);
         ciudadano.setApellido(apellido);
+        ciudadano.setGenero(genero);
         try {
             ciudadano.setFechaNacimiento(getXmlGregorianCalendarFromDate(fechaNacimiento));
         } catch (DatatypeConfigurationException e) {

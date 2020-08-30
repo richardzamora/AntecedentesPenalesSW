@@ -13,7 +13,7 @@ import controller.ControllerAntecedentesPenales;
  *
  * @author Estudiantes
  */
-public class AplicacionClienteRMIHola {
+public class Main {
 
     /**
      * @param args the command line arguments

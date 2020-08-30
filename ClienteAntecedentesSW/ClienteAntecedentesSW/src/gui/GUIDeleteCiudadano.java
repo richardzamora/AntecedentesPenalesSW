@@ -275,8 +275,8 @@ public class GUIDeleteCiudadano extends javax.swing.JFrame implements Cambiable{
                 jTextField1.setText(ciudadano.getNombre());
                 jTextField3.setText(ciudadano.getApellido());
                 jComboBox1.setSelectedIndex(ciudadano.getTipoDocumento()-1);
-                //TODO FALTA UN METODO
-                if(/*ciudadano.isHombre()*/true)
+
+                if(ciudadano.isGenero())
                     jRadioButtonH.setSelected(true);
                 else
                     jRadioButtonM.setSelected(true);

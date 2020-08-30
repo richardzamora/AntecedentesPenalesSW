@@ -73,16 +73,15 @@ public class Ciudadano implements Serializable, CRUD{
     public void setFechaNacimiento(Date fechaNacimiento) {
         this.fechaNacimiento = fechaNacimiento;
     }
-
-    public boolean isHombre() {
-        return genero;
-    }
-
+    
     public void setGenero(boolean genero) {
         this.genero = genero;
     }
-    
-    
+
+    public boolean isGenero() {
+        return genero;
+    }
+
     public boolean equals(Object objeto)
     {
         if(objeto==null)

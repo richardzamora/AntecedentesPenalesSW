@@ -21,6 +21,7 @@ import javax.xml.datatype.XMLGregorianCalendar;
  *         &lt;element name="apellido" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="cedula" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="fechaNacimiento" type="{http://www.w3.org/2001/XMLSchema}date" minOccurs="0"/>
+ *         &lt;element name="genero" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
  *         &lt;element name="nombre" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="tipoDocumento" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
  *       &lt;/sequence>
@@ -32,13 +33,15 @@ import javax.xml.datatype.XMLGregorianCalendar;
  *
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "ciudadano", propOrder = { "apellido", "cedula", "fechaNacimiento", "nombre", "tipoDocumento" })
+@XmlType(name = "ciudadano", propOrder = {
+         "apellido", "cedula", "fechaNacimiento", "genero", "nombre", "tipoDocumento" })
 public class Ciudadano {
 
     protected String apellido;
     protected String cedula;
     @XmlSchemaType(name = "date")
     protected XMLGregorianCalendar fechaNacimiento;
+    protected boolean genero;
     protected String nombre;
     protected Integer tipoDocumento;
 
@@ -112,6 +115,22 @@ public class Ciudadano {
      */
     public void setFechaNacimiento(XMLGregorianCalendar value) {
         this.fechaNacimiento = value;
+    }
+
+    /**
+     * Gets the value of the genero property.
+     *
+     */
+    public boolean isGenero() {
+        return genero;
+    }
+
+    /**
+     * Sets the value of the genero property.
+     *
+     */
+    public void setGenero(boolean value) {
+        this.genero = value;
     }
 
     /**
