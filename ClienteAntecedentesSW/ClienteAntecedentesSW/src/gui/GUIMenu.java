@@ -14,6 +14,9 @@ import javax.swing.border.EtchedBorder;
 import javax.swing.border.TitledBorder;
 import model.Ciudadano;
 import controller.ControllerAntecedentesPenales;
+
+import model.Delito;
+
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.ChartPanel;
 import org.jfree.chart.JFreeChart;
@@ -368,36 +371,62 @@ public class GUIMenu extends javax.swing.JFrame {
 
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
             // TODO add your handling code here:
-            DefaultPieDataset dataSet = new DefaultPieDataset();
-            
-            int cedula=0;
-            int tarjetaDeIdentidad=0;
-            int cedulaDeExtranjeria=0;
-                for(Ciudadano ciudadano : controller.darCiudadanos())
-                {
-                    if(ciudadano.getTipoDocumento()==1)
-                         cedula++;
-                    else if(ciudadano.getTipoDocumento()==2)
-                        tarjetaDeIdentidad++;
-                    else if(ciudadano.getTipoDocumento()==3)
-                        cedulaDeExtranjeria++;
-                }
-                dataSet.setValue("cedula", cedula);
-                dataSet.setValue("tarjetaDeIdentidad", tarjetaDeIdentidad);
-                dataSet.setValue("cedulaDeExtranjeria", cedulaDeExtranjeria);
-            
-            JFreeChart chart = ChartFactory.createPieChart("Frecuencia de documentos", dataSet, true, true, false);
-            ChartPanel panel = new ChartPanel(chart);
-            Border bordejpanel = new TitledBorder(new EtchedBorder(), "Gráfica");
-            panel.setBorder(bordejpanel);
-            JFrame ventana = new JFrame("");
-            ventana.setSize(800, 600);
-            ventana.setLocationRelativeTo(null);
-            ventana.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
-            ventana.setVisible(true);
-            ventana.add(panel);
+            graficaDelitos();
     }//GEN-LAST:event_jMenuItem1ActionPerformed
-
+    
+    private void graficaTipoDocumentos() {
+        DefaultPieDataset dataSet = new DefaultPieDataset();
+        
+        int cedula=0;
+        int tarjetaDeIdentidad=0;
+        int cedulaDeExtranjeria=0;
+            for(Ciudadano ciudadano : controller.darCiudadanos())
+            {
+                if(ciudadano.getTipoDocumento()==1)
+                     cedula++;
+                else if(ciudadano.getTipoDocumento()==2)
+                    tarjetaDeIdentidad++;
+                else if(ciudadano.getTipoDocumento()==3)
+                    cedulaDeExtranjeria++;
+            }
+            dataSet.setValue("cedula", cedula);
+            dataSet.setValue("tarjetaDeIdentidad", tarjetaDeIdentidad);
+            dataSet.setValue("cedulaDeExtranjeria", cedulaDeExtranjeria);
+        
+        JFreeChart chart = ChartFactory.createPieChart("Frecuencia de documentos", dataSet, true, true, false);
+        ChartPanel panel = new ChartPanel(chart);
+        Border bordejpanel = new TitledBorder(new EtchedBorder(), "Gráfica");
+        panel.setBorder(bordejpanel);
+        JFrame ventana = new JFrame("");
+        ventana.setSize(800, 600);
+        ventana.setLocationRelativeTo(null);
+        ventana.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
+        ventana.setVisible(true);
+        ventana.add(panel);
+    }
+    
+    private void graficaDelitos() {
+        DefaultPieDataset dataSet = new DefaultPieDataset();
+        
+            for(Delito delito : controller.darDelitos())
+            {
+                double numDelitos = controller.darAntecedentesPorDelito(delito.getCodigo()).size();
+                if(numDelitos>0) {
+                    dataSet.setValue(delito.getNombre(), numDelitos);
+                }
+            }
+        JFreeChart chart = ChartFactory.createPieChart("Frecuencia de delitos", dataSet, true, true, false);
+        ChartPanel panel = new ChartPanel(chart);
+        Border bordejpanel = new TitledBorder(new EtchedBorder(), "Gr�fica");
+        panel.setBorder(bordejpanel);
+        JFrame ventana = new JFrame("");
+        ventana.setSize(800, 600);
+        ventana.setLocationRelativeTo(null);
+        ventana.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
+        ventana.setVisible(true);
+        ventana.add(panel);
+    }
+    
     private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
         // TODO add your handling code here:
         System.exit(0);

@@ -14,6 +14,9 @@ import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 import controller.ControllerAntecedentesPenales;
 
+import model.Ciudadano;
+import model.Delito;
+
 /**
  *
  * @author Estudiantes
@@ -213,15 +216,30 @@ public class GUIDeleteAntecedente extends javax.swing.JFrame implements Cambiabl
 
     private void jButtonEliminarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonEliminarActionPerformed
             // TODO add your handling code here:
+        try{
             int id = Integer.parseInt(jTextFieldIdAntecedente.getText());
-            if(controller.eliminarAntecedente(id))
-            {
-                JOptionPane.showMessageDialog(this,"Antecedente eliminado correctamente");
-                limpiar();
-                jButtonEliminar.setEnabled(false);
-            }else{
-                JOptionPane.showMessageDialog(this, "No se pudo eliminar el antecedente");
+            Ciudadano ciudadano = controller.darCiudadanoPorCedula(jTextFieldDI.getText());
+            Delito delito = controller.darDelitoPorCodigo(Integer.parseInt(jTextFieldDelito.getText()));
+            String mensaje = "Seguro que desea eliminar el antecedente \ndel ciudadano "+ ciudadano.getNombre().trim() + " "+ ciudadano.getApellido().trim()+"\n" +
+                "con el delito de "+ delito.getNombre().trim();
+            int confirmar = JOptionPane.showConfirmDialog(this, mensaje);
+            if(confirmar==JOptionPane.OK_OPTION){
+                if(controller.eliminarAntecedente(id))
+                {
+                    JOptionPane.showMessageDialog(this,"Antecedente eliminado correctamente");
+                    limpiar();
+                    jButtonEliminar.setEnabled(false);
+                }else{
+                    JOptionPane.showMessageDialog(this, "No se pudo eliminar el antecedente");
+                }
             }
+            else{
+                JOptionPane.showMessageDialog(this, "Tranqui. El antecedente no se ha eliminado");
+            }
+        }
+        catch(Exception e) {
+            JOptionPane.showMessageDialog(this, "Por favor ingrese un documento de identificación y Codigo de delito valido");
+        }
     }//GEN-LAST:event_jButtonEliminarActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed

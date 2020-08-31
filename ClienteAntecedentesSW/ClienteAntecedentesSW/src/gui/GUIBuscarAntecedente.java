@@ -237,11 +237,35 @@ public class GUIBuscarAntecedente extends javax.swing.JFrame implements IBuscarC
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
             // TODO add your handling code here:
             String ciudadanoDi = jTextFieldDI.getText();
-            int codigoDelito = Integer.parseInt(jTextFieldDelito.getText());
-            ArrayList<Antecedente> antecedentes = controller.darAntecedentesPorCiudadanoYDelito(ciudadanoDi, codigoDelito);
+            int codigoDelito = 0;
+            try{
+            codigoDelito = Integer.parseInt(jTextFieldDelito.getText());
+            }
+            catch(Exception e) {
+                
+            }
+            ArrayList<Antecedente> antecedentes;
+            if(!jTextFieldDI.getText().trim().isEmpty() && !jTextFieldDelito.getText().trim().isEmpty()) {
+                antecedentes = controller.darAntecedentesPorCiudadanoYDelito(ciudadanoDi, codigoDelito);
+            }
+            else if(!jTextFieldDI.getText().trim().isEmpty() && jTextFieldDelito.getText().trim().isEmpty()){
+                antecedentes = controller.darAntecedentesPorCiudadano(ciudadanoDi);
+            }
+            else if(jTextFieldDI.getText().trim().isEmpty() && !jTextFieldDelito.getText().trim().isEmpty()){
+                antecedentes = controller.darAntecedentesPorDelito(codigoDelito);
+            }
+            else{
+                int idAntecedente = Integer.parseInt(jTextFieldIdAntecedente.getText());
+                antecedentes = new ArrayList<Antecedente>();
+                Antecedente anteced = controller.darAntecedentePorId(idAntecedente);
+                if(anteced!=null)
+                    antecedentes.add(anteced);
+                }
             
             if(!antecedentes.isEmpty())
             {
+                jTextFieldDI.setText(antecedentes.get(0).getCiudadanoDi());
+                jTextFieldDelito.setText(antecedentes.get(0).getDelitoCodigo()+"");
                 String codigoId = ""+  antecedentes.get(0).getId();
                 jTextFieldIdAntecedente.setText(codigoId);
                 jTextFieldCiudad.setText(antecedentes.get(0).getCiudad().trim());
@@ -250,6 +274,7 @@ public class GUIBuscarAntecedente extends javax.swing.JFrame implements IBuscarC
                 jDateChooser1.setDate(controller.toDate(antecedentes.get(0).getFechaDelito()));
             }else{
                 JOptionPane.showMessageDialog(this,"El antecedente no fue encontrado");
+                limpiar();
             }
     }//GEN-LAST:event_jButton1ActionPerformed
 
