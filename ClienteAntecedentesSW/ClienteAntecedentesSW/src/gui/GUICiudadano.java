@@ -195,7 +195,7 @@ public class GUICiudadano extends javax.swing.JFrame implements Cambiable {
             if(!controller.darCiudadanos().isEmpty())
             {
                 for (Ciudadano people : controller.darCiudadanos()) {
-                    model.addRow(new Object[]{people.getNombre(),people.getApellido(), people.getFechaNacimiento(),people.getTipoDocumento(), people.getCedula()});
+                    model.addRow(new Object[]{people.getNombre(),people.getApellido(), people.getFechaNacimiento(),controller.darTipoDocumentoPorCodigo(people.getTipoDocumento()).getSiglas(), people.getCedula()});
                 }    
             }
     }

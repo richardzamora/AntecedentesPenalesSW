@@ -27,7 +27,7 @@ public class ServicioTipoDocumento {
         
         try {
             conn = Conexion.getInstance();
-            rs = conn.executeQuery(tipoDocumento.leerTodos());
+            rs = conn.executeQuery(tipoDocumento.leer());
             while(rs.next()){
                 int codigo = rs.getInt("codigo");
                 String siglas = rs.getString("siglas");
