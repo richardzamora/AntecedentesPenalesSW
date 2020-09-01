@@ -236,15 +236,13 @@ public class GUIBuscarAntecedente extends javax.swing.JFrame implements IBuscarC
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
             // TODO add your handling code here:
+            try{
             String ciudadanoDi = jTextFieldDI.getText();
             int codigoDelito = 0;
             int caso = -1;
-            try{
+            
             codigoDelito = Integer.parseInt(jTextFieldDelito.getText());
-            }
-            catch(Exception e) {
-                
-            }
+            
             ArrayList<Antecedente> antecedentes;
             if(!jTextFieldDI.getText().trim().isEmpty() && !jTextFieldDelito.getText().trim().isEmpty()) {
                 antecedentes = controller.darAntecedentesPorCiudadanoYDelito(ciudadanoDi, codigoDelito);
@@ -266,6 +264,7 @@ public class GUIBuscarAntecedente extends javax.swing.JFrame implements IBuscarC
                     antecedentes.add(anteced);
                 caso=4;
                 }
+                
             
             if(!antecedentes.isEmpty())
             {
@@ -295,8 +294,13 @@ public class GUIBuscarAntecedente extends javax.swing.JFrame implements IBuscarC
                     JOptionPane.showMessageDialog(this,"Ha ocurrido un error en el servidor contacte con el servicio de soporte técnico");
                     break;
                 }
+                }
+                
                 limpiar();
             }
+        catch(Exception e) {
+            
+        }
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
