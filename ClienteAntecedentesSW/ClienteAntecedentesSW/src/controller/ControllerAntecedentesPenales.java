@@ -88,7 +88,6 @@ public class ControllerAntecedentesPenales{
         } catch (DatatypeConfigurationException e) {
             System.out.println(e);
         }
-        //Falta el genero
         return servicioAntecedentesPenales.actualizarCiudadano(ciudadano);
     }
     
@@ -136,6 +135,7 @@ public class ControllerAntecedentesPenales{
     
     public boolean actualizarAntecedente(int id, String ciudadanoDi, int delitoCodigo, String ciudad, Date fechaDelito, int sentencia, String estado){
         Antecedente antecedente = new Antecedente();
+        antecedente.setId(id);
         antecedente.setCiudadanoDi(ciudadanoDi);
         antecedente.setDelitoCodigo(delitoCodigo);
         antecedente.setCiudad(ciudad);

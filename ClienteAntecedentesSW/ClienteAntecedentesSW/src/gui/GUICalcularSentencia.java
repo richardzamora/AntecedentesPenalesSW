@@ -60,7 +60,7 @@ public class GUICalcularSentencia extends javax.swing.JFrame implements Cambiabl
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("ANTECEDENTES");
 
-        jLabel6.setText("Numero de identificación ");
+        jLabel6.setText("Numero de identificaciÃ³n ");
         jLabel6.setToolTipText("");
 
         jTextFieldDi.setBorder(javax.swing.BorderFactory.createMatteBorder(4, 4, 4, 4, new java.awt.Color(229, 229, 229)));
@@ -142,7 +142,7 @@ public class GUICalcularSentencia extends javax.swing.JFrame implements Cambiabl
             if(ciudadano!=null){
                 JOptionPane.showMessageDialog( this, " El total de las sentencias del ciudadano: " + ciudadano.getNombre().trim() + " " + ciudadano.getApellido().trim() + " es de: " + sentenciasTotales + " años ");
             }else{
-                JOptionPane.showMessageDialog(this, "El ciudadano " + ciudadano.getNombre().trim() + " " + ciudadano.getApellido().trim() + " no tiene sentencias pendientes");
+                JOptionPane.showMessageDialog(this, "El ciudadano no existe");
             }
        
     }//GEN-LAST:event_jButton6ActionPerformed
