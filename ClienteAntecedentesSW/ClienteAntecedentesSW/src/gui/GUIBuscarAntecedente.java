@@ -67,7 +67,7 @@ public class GUIBuscarAntecedente extends javax.swing.JFrame implements IBuscarC
 
         jTextFieldDelito.setBorder(javax.swing.BorderFactory.createMatteBorder(3, 3, 3, 3, new java.awt.Color(229, 229, 229)));
 
-        jLabel6.setText("Numero de identificación ");
+        jLabel6.setText("Numero de identificaciÃ³n ");
         jLabel6.setToolTipText("");
 
         jLabel7.setText("Delito");
@@ -121,7 +121,7 @@ public class GUIBuscarAntecedente extends javax.swing.JFrame implements IBuscarC
         jLabel9.setText("Ciudad");
         jLabel9.setToolTipText("");
 
-        jLabel10.setText("Fecha en el que se realizó");
+        jLabel10.setText("Fecha en el que se realizÃ³");
         jLabel10.setToolTipText("");
 
         jLabel11.setText("Sentencia");
@@ -238,6 +238,7 @@ public class GUIBuscarAntecedente extends javax.swing.JFrame implements IBuscarC
             // TODO add your handling code here:
             String ciudadanoDi = jTextFieldDI.getText();
             int codigoDelito = 0;
+            int caso = -1;
             try{
             codigoDelito = Integer.parseInt(jTextFieldDelito.getText());
             }
@@ -247,12 +248,15 @@ public class GUIBuscarAntecedente extends javax.swing.JFrame implements IBuscarC
             ArrayList<Antecedente> antecedentes;
             if(!jTextFieldDI.getText().trim().isEmpty() && !jTextFieldDelito.getText().trim().isEmpty()) {
                 antecedentes = controller.darAntecedentesPorCiudadanoYDelito(ciudadanoDi, codigoDelito);
+                caso=1;
             }
             else if(!jTextFieldDI.getText().trim().isEmpty() && jTextFieldDelito.getText().trim().isEmpty()){
                 antecedentes = controller.darAntecedentesPorCiudadano(ciudadanoDi);
+                caso=2;
             }
             else if(jTextFieldDI.getText().trim().isEmpty() && !jTextFieldDelito.getText().trim().isEmpty()){
                 antecedentes = controller.darAntecedentesPorDelito(codigoDelito);
+                caso=3;
             }
             else{
                 int idAntecedente = Integer.parseInt(jTextFieldIdAntecedente.getText());
@@ -260,6 +264,7 @@ public class GUIBuscarAntecedente extends javax.swing.JFrame implements IBuscarC
                 Antecedente anteced = controller.darAntecedentePorId(idAntecedente);
                 if(anteced!=null)
                     antecedentes.add(anteced);
+                caso=4;
                 }
             
             if(!antecedentes.isEmpty())
@@ -273,7 +278,23 @@ public class GUIBuscarAntecedente extends javax.swing.JFrame implements IBuscarC
                 jTextFieldSentencia.setText(antecedentes.get(0).getSentencia()+"");
                 jDateChooser1.setDate(controller.toDate(antecedentes.get(0).getFechaDelito()));
             }else{
-                JOptionPane.showMessageDialog(this,"El antecedente no fue encontrado");
+                switch(caso){
+                case 1:
+                    JOptionPane.showMessageDialog(this,"El ciudadano no tiene dicho antecedente");
+                    break;
+                case 2:
+                    JOptionPane.showMessageDialog(this,"El ciudadano no tiene antecedentes");
+                    break;
+                case 3:
+                    JOptionPane.showMessageDialog(this,"Ningun ciudadano tiene ese antecedente");
+                    break;
+                case 4:
+                    JOptionPane.showMessageDialog(this,"No hay antecedente con el id especificado");
+                    break;
+                default:
+                    JOptionPane.showMessageDialog(this,"Ha ocurrido un error en el servidor contacte con el servicio de soporte técnico");
+                    break;
+                }
                 limpiar();
             }
     }//GEN-LAST:event_jButton1ActionPerformed
