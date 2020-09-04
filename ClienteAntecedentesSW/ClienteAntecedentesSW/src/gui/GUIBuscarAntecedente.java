@@ -295,8 +295,6 @@ public class GUIBuscarAntecedente extends javax.swing.JFrame implements IBuscarC
                     break;
                 }
                 }
-                
-                limpiar();
             }
         catch(Exception e) {
             
