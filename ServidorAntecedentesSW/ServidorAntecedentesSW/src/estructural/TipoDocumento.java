@@ -7,10 +7,13 @@ package estructural;
 
 import java.io.Serializable;
 
+import javax.xml.bind.annotation.XmlRootElement;
+
 /**
  *
  * @author richa
  */
+@XmlRootElement(name = "TipoDocumento")
 public class TipoDocumento implements Serializable, CRUD{
     private int codigo;
     private String siglas;

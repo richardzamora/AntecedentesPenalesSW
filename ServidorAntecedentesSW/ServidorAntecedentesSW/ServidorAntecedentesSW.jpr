@@ -89,6 +89,7 @@
       <list n="technologyScope">
          <string v="Java"/>
          <string v="Maven"/>
+         <string v="RESTWebServices"/>
          <string v="WSDL"/>
          <string v="WSPolicy"/>
          <string v="WebServices"/>
@@ -193,11 +194,23 @@
    <hash n="oracle.jdevimpl.config.JProjectLibraries">
       <list n="exportedReferences">
          <hash>
+            <value n="id" v="Pg74.216.jdbc3.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
             <value n="id" v="JAX-WS Web Services"/>
             <value n="isJDK" v="false"/>
          </hash>
          <hash>
-            <value n="id" v="Pg74.216.jdbc3.jar"/>
+            <value n="id" v="Jersey-json-1.19.1.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Jaxb-api-2.2.2.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Jaxb-impl-2.2.3-1.jar"/>
             <value n="isJDK" v="false"/>
          </hash>
       </list>
@@ -284,6 +297,114 @@
                <value n="id" v="Pg74.216.jdbc3.jar"/>
                <value n="locked" v="true"/>
             </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="public_html/WEB-INF/lib/jersey-json-1.19.1.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Jersey-json-1.19.1.jar"/>
+               <value n="id" v="Jersey-json-1.19.1.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="public_html/WEB-INF/lib/activation-1.1.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Activation-1.1.jar"/>
+               <value n="id" v="Activation-1.1.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="public_html/WEB-INF/lib/jackson-core-asl-1.9.2.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Jackson-core-asl-1.9.2.jar"/>
+               <value n="id" v="Jackson-core-asl-1.9.2.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="public_html/WEB-INF/lib/jackson-jaxrs-1.9.2.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Jackson-jaxrs-1.9.2.jar"/>
+               <value n="id" v="Jackson-jaxrs-1.9.2.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="public_html/WEB-INF/lib/jackson-mapper-asl-1.9.2.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Jackson-mapper-asl-1.9.2.jar"/>
+               <value n="id" v="Jackson-mapper-asl-1.9.2.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="public_html/WEB-INF/lib/jackson-xc-1.9.2.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Jackson-xc-1.9.2.jar"/>
+               <value n="id" v="Jackson-xc-1.9.2.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="public_html/WEB-INF/lib/jaxb-api-2.2.2.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Jaxb-api-2.2.2.jar"/>
+               <value n="id" v="Jaxb-api-2.2.2.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="public_html/WEB-INF/lib/jaxb-impl-2.2.3-1.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Jaxb-impl-2.2.3-1.jar"/>
+               <value n="id" v="Jaxb-impl-2.2.3-1.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="public_html/WEB-INF/lib/jersey-core-1.19.1.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Jersey-core-1.19.1.jar"/>
+               <value n="id" v="Jersey-core-1.19.1.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="public_html/WEB-INF/lib/jettison-1.1.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Jettison-1.1.jar"/>
+               <value n="id" v="Jettison-1.1.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="public_html/WEB-INF/lib/jsr311-api-1.1.1.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Jsr311-api-1.1.1.jar"/>
+               <value n="id" v="Jsr311-api-1.1.1.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="public_html/WEB-INF/lib/stax-api-1.0-2.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Stax-api-1.0-2.jar"/>
+               <value n="id" v="Stax-api-1.0-2.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
          </list>
       </hash>
       <hash n="jdkReference">
@@ -293,11 +414,63 @@
       </hash>
       <list n="libraryReferences">
          <hash>
+            <value n="id" v="Pg74.216.jdbc3.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
             <value n="id" v="JAX-WS Web Services"/>
             <value n="isJDK" v="false"/>
          </hash>
          <hash>
-            <value n="id" v="Pg74.216.jdbc3.jar"/>
+            <value n="id" v="Jersey-json-1.19.1.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="JAX-RS Jersey 1.x"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Activation-1.1.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Jackson-core-asl-1.9.2.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Jackson-jaxrs-1.9.2.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Jackson-mapper-asl-1.9.2.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Jackson-xc-1.9.2.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Jaxb-api-2.2.2.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Jaxb-impl-2.2.3-1.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Jersey-core-1.19.1.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Jettison-1.1.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Jsr311-api-1.1.1.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Stax-api-1.0-2.jar"/>
             <value n="isJDK" v="false"/>
          </hash>
       </list>

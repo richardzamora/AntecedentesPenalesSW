@@ -8,10 +8,16 @@ package estructural;
 import java.io.Serializable;
 import java.sql.Date;
 
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlType;
+
 /**
  *
  * @author Richard
  */
+@XmlRootElement(name = "Ciudadano")
 public class Ciudadano implements Serializable, CRUD{
    
     private String di;

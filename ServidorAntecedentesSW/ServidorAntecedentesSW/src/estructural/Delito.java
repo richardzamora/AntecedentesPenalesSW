@@ -7,10 +7,13 @@ package estructural;
 
 import java.io.Serializable;
 
+import javax.xml.bind.annotation.XmlRootElement;
+
 /**
  *
  * @author richa
  */
+@XmlRootElement(name = "Delito")
 public class Delito implements Serializable, CRUD{
     private int codigo;
     private String nombre;

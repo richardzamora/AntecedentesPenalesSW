@@ -8,10 +8,16 @@ package estructural;
 import java.io.Serializable;
 import java.util.Date;
 
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlType;
+
 /**
  *
  * @author Richard
  */
+@XmlRootElement(name = "Antecedente")
 public class Antecedente implements Serializable, CRUD{
     
     private int id;
